@@ -1,7 +1,29 @@
-import { useState } from 'react'
+import React, { useEffect } from 'react';
 import './App.css'
 
 function App() {
+
+  useEffect(() => {
+    const handleClick = (e) => {
+      e.preventDefault();
+      document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+
+    const anchors = document.querySelectorAll('nav a');
+
+    anchors.forEach((anchor) => {
+      anchor.addEventListener('click', handleClick);
+    })
+
+    return () => {
+      // Clean up event listeners when the component unmounts
+      anchors.forEach((anchor) => {
+        anchor.removeEventListener('click', handleClick);
+      })
+    }
+  }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   return (
     <div className="App">
