@@ -55,6 +55,21 @@ section h2 {
   margin-bottom: 20px;
 }
 
+#about {
+  background-color: #85d255;
+  border: 5px solid aquamarine;
+}
+
+#studies {
+  background-color: #d29e55;
+  border: 5px solid rgb(216, 64, 18);
+}
+
+#projects {
+  background-color: #9b79e9;
+  border: 5px solid rgb(226, 47, 178);
+}
+
 /* Footer styles */
 footer {
   background-color: #000;
