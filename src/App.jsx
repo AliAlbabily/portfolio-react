@@ -49,6 +49,7 @@ function App() {
             <li><a href="#studies">Studies & Experience</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>
+          <img src="https://mui.com/static/images/avatar/2.jpg" alt="Logo"/>
         </nav>
       </header>
 
