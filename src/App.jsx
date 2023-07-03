@@ -27,7 +27,8 @@ function App() {
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   const insideStyles = {
-    background: "#00000075",
+    // background: "#00000075", // black
+    background: "#6eccb275",
     padding: "100%",
     position: "absolute",
     top: "50%",
@@ -67,7 +68,7 @@ function App() {
         {/* Your studies and experience content here */}
       </section>
 
-      <Parallax bgImage={"https://p.potaufeu.asahi.com/611d-p/picture/24675667/de55a90dc66769943f6d517737a9b351.jpg"} strength={500}>
+      <Parallax bgImage={"https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2021/04/18-meter-Tall-Gundam-Statue-in-China-Featured-image.jpg"} strength={500}>
         <div style={{ height: 500 }}>
           <div style={insideStyles}>Projects</div>
         </div>
@@ -79,7 +80,7 @@ function App() {
       </section>
 
       <footer>
-        {/* Your footer content here */}
+        This page is designed and maintained by Ali Fadhel
       </footer>
     </div>
   )
