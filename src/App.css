@@ -60,6 +60,20 @@ nav img {
   object-fit: cover;
 }
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  filter: hue-rotate(20deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
 /* Section styles */
 #studies, #projects {
   height: 100vh;
@@ -195,5 +209,14 @@ footer {
   100% {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

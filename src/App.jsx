@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { Parallax, Background } from "react-parallax";
-import MeImage from './assets/me1.jpg';
 import HomeImage from './assets/Bild3.png';
+import logo from './assets/logo.svg';
 
 function App() {
 
@@ -52,7 +52,7 @@ function App() {
             <li><a href="#studies">Education & Experience</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>
-          <img src={MeImage} alt="Logo"/>
+          <img src={logo} className="App-logo" alt="logo" />
         </nav>
       </header>
 
