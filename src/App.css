@@ -10,8 +10,8 @@ body {
   font-family: Arial, sans-serif;
   color: #fff;
   background-color: #65dfc9;
-  background-image: url(https://jooinn.com/images/abstract-background-305.jpg);
-  background-position: top;
+  /* background-image: url("https://jooinn.com/images/abstract-background-305.jpg"); */
+  background-image: url("./assets/stretched-1920-1080-1320520.png");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -24,7 +24,7 @@ body {
 
 /* Header styles */
 header {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: rgb(149 149 149 / 30%);
   padding: 20px;
 }
 
@@ -49,6 +49,7 @@ nav ul li a {
   text-decoration: none;
   margin-right: 20px;
   font-size: larger;
+  font-family: fantasy;
   text-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
 
@@ -57,6 +58,7 @@ nav img {
   height: 40px; /* Adjust the height as needed */
   border-radius: 50%; /* Creates a circular shape */
   box-shadow: 0px 0px 2px 0px rgb(0 0 0);
+  object-fit: cover;
 }
 
 /* Section styles */
@@ -75,24 +77,27 @@ section h2 {
 }
 
 #about {
-  background-color: #85d255;
-  border: 5px solid aquamarine;
+  background: rgb(149 149 149 / 30%);
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
 }
 
 #studies {
-  background-color: #d29e55;
-  border: 5px solid rgb(216, 64, 18);
+  background: rgb(149 149 149 / 30%);
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
 }
 
 #projects {
-  background-color: #9b79e9;
-  border: 5px solid rgb(226, 47, 178);
+  background: rgb(149 149 149 / 30%);
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
 }
 
 /* Footer styles */
 footer {
   text-shadow: 0px 0px 3px rgb(0 0 0);
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: rgb(149 149 149 / 30%);
   padding: 20px;
   text-align: center;
 }

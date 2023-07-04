@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css'
 import { Parallax, Background } from "react-parallax";
+import MeImage from './assets/me1.jpg'
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
 
   const insideStyles = {
     // background: "#00000075", // black
-    background: "#6eccb275",
+    // background: "#6eccb275", // lightgreen
+    // background: "#6f7d7975", // light
     padding: "100%",
     position: "absolute",
     top: "50%",
@@ -46,10 +48,10 @@ function App() {
         <nav>
           <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#studies">Studies & Experience</a></li>
+            <li><a href="#studies">Education & Experience</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>
-          <img src="https://mui.com/static/images/avatar/2.jpg" alt="Logo"/>
+          <img src={MeImage} alt="Logo"/>
         </nav>
       </header>
 
@@ -60,13 +62,13 @@ function App() {
 
       <Parallax bgImage={"https://media.timeout.com/images/105934803/image.jpg"} strength={500}>
         <div style={{ height: 500 }}>
-          <div style={insideStyles}>Studies & Experience</div>
+          <div style={insideStyles}>Education & Experience</div>
         </div>
       </Parallax>
 
       <section id="studies">
-        <h2>Studies & Experience</h2>
-        {/* Your studies and experience content here */}
+        <h2>Education & Experience</h2>
+        {/* Your Education and experience content here */}
       </section>
 
       <Parallax bgImage={"https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2021/04/18-meter-Tall-Gundam-Statue-in-China-Featured-image.jpg"} strength={500}>
