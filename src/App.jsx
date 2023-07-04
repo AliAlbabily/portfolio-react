@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import './App.css'
+import './App.css';
 import { Parallax, Background } from "react-parallax";
-import MeImage from './assets/me1.jpg'
+import MeImage from './assets/me1.jpg';
+import HomeImage from './assets/Bild3.png';
 
 function App() {
 
@@ -28,9 +29,9 @@ function App() {
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   const insideStyles = {
-    // background: "#00000075", // black
     // background: "#6eccb275", // lightgreen
     // background: "#6f7d7975", // light
+    background: "#589efc36", // lightblue
     padding: "100%",
     position: "absolute",
     top: "50%",
@@ -55,9 +56,24 @@ function App() {
         </nav>
       </header>
 
-      <section id="about">
-        <h2>About Me</h2>
-        {/* Your about me content here */}
+      <section id="about"> {/* home */}
+        <div className="about-content"> {/* home-content */}
+          <h3>Hello! I'm</h3>
+          <h1>Ali Fadhel</h1>
+          <h3>And I'm a <span>Fullstack Developer</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sapien et orci ultricies, vel consequat purus ultrices.</p>
+          <div className="social-media">
+            <a href="#"><i className='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i className='bx bxl-github'></i></a>
+            <a href="#"><i className='bx bxl-twitter'></i></a>
+            <a href="#"><i className='bx bxl-facebook'></i></a>
+          </div>
+          <a href="#" className="btn">Download CV</a>
+        </div>
+
+        <div className="home-image">
+            <img src={HomeImage} alt="Logo" />
+        </div>
       </section>
 
       <Parallax bgImage={"https://media.timeout.com/images/105934803/image.jpg"} strength={500}>
