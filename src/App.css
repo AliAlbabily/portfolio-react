@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #fff;
-  background-color: #65dfc9;
+  background-color: #000000;
   /* background-image: url("https://jooinn.com/images/abstract-background-305.jpg"); */
   background-image: url("./assets/stretched-1920-1080-1320520.png");
   background-attachment: fixed;
@@ -50,6 +50,11 @@ nav ul li a {
   margin-right: 20px;
   font-size: larger;
   font-family: fantasy;
+  transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: #589efc;
 }
 
 nav img {
@@ -101,6 +106,7 @@ section h2 {
   align-items: center;
   padding: 5% 10% 10%;
   animation: slideRight 2s ease forwards;
+  box-shadow: inset 0px 0px 20px 0px #000000;
 }
 
 .about-content { /* home-content */
@@ -185,12 +191,14 @@ section h2 {
   background: rgb(149 149 149 / 30%);
   border-top: 2px solid darkgray;
   border-bottom: 2px solid darkgray;
+  box-shadow: inset 0px 0px 20px 0px #000000;
 }
 
 #projects {
   background: rgb(149 149 149 / 30%);
   border-top: 2px solid darkgray;
   border-bottom: 2px solid darkgray;
+  box-shadow: inset 0px 0px 20px 0px #000000;
 }
 
 /* Footer styles */
