@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { Parallax, Background } from "react-parallax";
-import HomeImage from './assets/Bild3.png';
-import logo from './assets/logo.svg';
+import { Parallax } from "react-parallax";
+import AboutSection from './About';
+import StudiesSection from './Studies';
+import ProjectsSection from './Projects';
+import Header from './Header';
 
 function App() {
 
@@ -45,36 +47,9 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#studies">Education & Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-          <img src={logo} className="App-logo" alt="logo" />
-        </nav>
-      </header>
+      <Header />
 
-      <section id="about"> {/* home */}
-        <div className="about-content"> {/* home-content */}
-          <h3>Hello! I'm</h3>
-          <h1>Ali Fadhel</h1>
-          <h3>And I'm a <span>Fullstack Developer</span></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sapien et orci ultricies, vel consequat purus ultrices.</p>
-          <div className="social-media">
-            <a href="#"><i className='bx bxl-linkedin-square'></i></a>
-            <a href="#"><i className='bx bxl-github'></i></a>
-            <a href="#"><i className='bx bxl-twitter'></i></a>
-            <a href="#"><i className='bx bxl-facebook'></i></a>
-          </div>
-          <a href="#" className="btn">Download CV</a>
-        </div>
-
-        <div className="home-image">
-            <img src={HomeImage} alt="Logo" />
-        </div>
-      </section>
+      <AboutSection />
 
       <Parallax bgImage={"https://media.timeout.com/images/105934803/image.jpg"} strength={500}>
         <div style={{ height: 500 }}>
@@ -82,10 +57,7 @@ function App() {
         </div>
       </Parallax>
 
-      <section id="studies">
-        <h2>Education & Experience</h2>
-        {/* Your Education and experience content here */}
-      </section>
+      <StudiesSection />
 
       <Parallax bgImage={"https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2021/04/18-meter-Tall-Gundam-Statue-in-China-Featured-image.jpg"} strength={500}>
         <div style={{ height: 500 }}>
@@ -93,10 +65,7 @@ function App() {
         </div>
       </Parallax>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        {/* Your projects content here */}
-      </section>
+      <ProjectsSection />
 
       <footer>
         This page is designed and maintained by Ali Fadhel
