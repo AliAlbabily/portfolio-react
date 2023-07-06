@@ -94,7 +94,7 @@ section h2 {
   margin-bottom: 20px;
 }
 
-#about { /* home */
+#about {
   height: 100vh;
   background: rgb(149 149 149 / 30%);
   border-top: 2px solid darkgray;
@@ -109,7 +109,7 @@ section h2 {
   box-shadow: inset 0px 0px 20px 0px #000000;
 }
 
-.about-content { /* home-content */
+.about-content {
   max-width: 600px;
 }
 
