@@ -5,6 +5,23 @@ function AboutSection() {
     const handleAnchorClick = (textMessage) => {
         alert(textMessage + ' profile not linked yet.');
     };
+
+    const handleDownloadClick = () => {
+        const filePath = '/CV-English.pdf';
+        
+        // Perform basic file path validation
+        if (isValidFilePath(filePath)) {
+            window.open(filePath, '_blank'); // Open the file in a new tab
+        } else {
+            console.error('Invalid file path');
+        }
+    };
+
+    const isValidFilePath = (filePath) => {
+        // Check if the filePath starts with '/CV'
+        console.log(filePath)
+        return filePath.startsWith('/CV');
+    };
     
     return ( 
         <section id="about">
@@ -32,7 +49,9 @@ function AboutSection() {
                         <i className='bx bxl-facebook'></i>
                     </a>
                 </div>
-                <a href="#" className="btn">Download CV</a>
+                <a href="#" className="btn" onClick={handleDownloadClick}>
+                    Download CV
+                </a>
             </div>
 
             <div className="home-image">
