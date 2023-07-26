@@ -53,7 +53,7 @@ function App() {
 
       <Parallax bgImage={"https://media.timeout.com/images/105934803/image.jpg"} strength={500}>
         <div style={{ height: 500 }}>
-          <div style={insideStyles}>Education & Experience</div>
+          <div style={insideStyles}>Education</div>
         </div>
       </Parallax>
 
