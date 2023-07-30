@@ -232,6 +232,10 @@ section h2 {
   text-align: left;
 }
 
+#studies .card:first-child h3 {
+  font-size: 1.1rem;
+}
+
 #projects {
   height: 100vh;
   display: flex;
