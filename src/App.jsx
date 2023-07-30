@@ -61,7 +61,7 @@ function App() {
 
       <Parallax bgImage={"https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2021/04/18-meter-Tall-Gundam-Statue-in-China-Featured-image.jpg"} strength={500}>
         <div style={{ height: 500 }}>
-          <div style={insideStyles}>Projects</div>
+          <div style={insideStyles}>Hobby Projects</div>
         </div>
       </Parallax>
 
