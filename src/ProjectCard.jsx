@@ -3,25 +3,32 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActions } from '@mui/material';
 
-function ProjectCard() {
+function ProjectCard({name, imageUrl, githubUrl, demoIsAvailable, demoUrl}) {
+
+    const handleGithubButtonClick = () => {        
+        window.open(githubUrl, '_blank', 'noopener,noreferrer')
+    };
+
+    const handleDemoButtonClick = () => {        
+        window.open(demoUrl, '_blank', 'noopener,noreferrer')
+    };
+
     return ( 
         <Card sx={{ width: 250 }}>
             <CardMedia
                 component="img"
                 alt="green iguana"
                 height="140"
-                image="https://user-images.githubusercontent.com/32642133/130327760-c3a8ab02-302d-46bc-ae2d-8e8c217caf2d.png"
+                image={imageUrl}
             />
             <CardContent>
-                <Typography variant="h5">
-                Lizard
-                </Typography>
+                <Typography variant="h5">{name}</Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" variant="contained">Github</Button>
-                <Button size="small" variant="contained">Demo</Button>
+                <Button size="small" variant="contained" onClick={handleGithubButtonClick}>Github</Button>
+                {demoIsAvailable ? <Button size="small" variant="contained" onClick={handleDemoButtonClick}>Demo</Button> : null}
             </CardActions>
         </Card>
     );

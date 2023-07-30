@@ -11,7 +11,7 @@ function AboutSection() {
         
         // Perform basic file path validation
         if (isValidFilePath(filePath)) {
-            window.open(filePath, '_blank'); // Open the file in a new tab
+            window.open(filePath, '_blank', 'noopener,noreferrer'); // Open the file in a new tab
         } else {
             console.error('Invalid file path');
         }
@@ -19,7 +19,6 @@ function AboutSection() {
 
     const isValidFilePath = (filePath) => {
         // Check if the filePath starts with '/CV'
-        console.log(filePath)
         return filePath.startsWith('/CV');
     };
     

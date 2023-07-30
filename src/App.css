@@ -247,11 +247,16 @@ section h2 {
 
 #projects > div {
   background-color: #0000006b;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#projects h5 {
+  font-size: 100%;
+  font-family: math;
   text-shadow: none;
   text-align: center;
   color: white;
-  margin: 10px;
-  border-radius: 5px;
 }
 
 /* Footer styles */
