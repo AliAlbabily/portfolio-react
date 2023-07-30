@@ -5,6 +5,7 @@ import AboutSection from './About';
 import StudiesSection from './Studies';
 import ProjectsSection from './Projects';
 import Header from './Header';
+import ScrollTop from './ScrollTopBtn';
 
 function App() {
 
@@ -66,6 +67,8 @@ function App() {
       </Parallax>
 
       <ProjectsSection />
+
+      <ScrollTop />
 
       <footer>
         This page is designed and maintained by Ali Fadhel
