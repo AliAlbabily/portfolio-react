@@ -71,7 +71,7 @@ function App() {
       <ScrollTop />
 
       <footer>
-        This page is designed and maintained by Ali Fadhel
+        This page is designed and maintained by Ali Albabily
       </footer>
     </div>
   )

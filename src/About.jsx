@@ -26,7 +26,7 @@ function AboutSection() {
         <section id="about">
             <div className="about-content">
                 <h3>Hello! I'm</h3>
-                <h1>Ali Fadhel Al.</h1>
+                <h1>Ali Albabily</h1>
                 <h3>And I'm a <span>Fullstack Developer</span></h3>
                 <p>
                 I have recently graduated from Malmö University with a bachelor's degree in Computer Science. During my studies, 
