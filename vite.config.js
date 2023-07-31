@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     open: true // Add this line to open the browser automatically
   },
-  base: '/portfolio-react',
+  base: 'portfolio-react',
 })
