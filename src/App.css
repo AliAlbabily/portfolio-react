@@ -10,7 +10,6 @@ body {
   font-family: Arial, sans-serif;
   color: #fff;
   background-color: #000000;
-  /* background-image: url("https://jooinn.com/images/abstract-background-305.jpg"); */
   background-image: url("./assets/stretched-1920-1080-1320520.png");
   background-attachment: fixed;
   background-size: cover;
@@ -81,11 +80,6 @@ nav img {
 }
 
 /* Section styles */
-section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
 #about {
   height: 100vh;
   background: rgb(149 149 149 / 30%);
@@ -125,8 +119,9 @@ section h2 {
 }
 
 .about-content p {
-  font-size: 16px;
   margin-bottom: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 .social-media a {
@@ -172,7 +167,6 @@ section h2 {
 
 .home-image {
   max-width: 570px;
-  margin-right: -40px;
 }
 
 .home-image img {
@@ -289,5 +283,56 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ******************************* */
+/* Tablet */
+/* ******************************* */
+@media screen and (max-width: 950px) {
+  #about {
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-image {
+    max-width: 400px;
+    margin-right: unset;
+    margin-bottom: 10px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #studies {
+    height: fit-content;
+  }
+
+  #studies .card:first-child {
+    margin-bottom: 20px;
+  }
+
+  #projects {
+    height: fit-content;
+  }
+}
+
+/* ******************************* */
+/* Mobile */
+/* ******************************* */
+@media screen and (max-width: 500px) {
+  nav ul li a {
+    margin-right: 15px;
+    font-size: medium;
+    letter-spacing: 1px;
+  }
+
+  .about-content h1 {
+    font-size: 10vw;
   }
 }
