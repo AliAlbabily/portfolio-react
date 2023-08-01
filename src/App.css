@@ -48,7 +48,7 @@ nav ul li a {
   text-decoration: none;
   margin-right: 20px;
   font-size: larger;
-  font-family: fantasy;
+  font-family: "Arial", sans-serif;
   letter-spacing: 1px;
   transition: 0.5s ease;
 }

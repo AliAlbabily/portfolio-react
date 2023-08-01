@@ -43,7 +43,7 @@ function App() {
     color: "white",
     fontSize: "36px",
     textWrap: "nowrap",
-    fontFamily: "fantasy"
+    fontFamily: "'Arial', sans-serif"
   };
 
   return (
