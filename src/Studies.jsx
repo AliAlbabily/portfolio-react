@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ecutbildning from './assets/ecutbildning-javautvecklare.jpg';
+
 function StudiesSection() {
     return ( 
         <section id="studies">
@@ -10,7 +12,7 @@ function StudiesSection() {
             </div>
 
             <div className="card">
-                <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t31.18172-8/21949792_1667099169969784_5331230737187925255_o.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=9267fe&_nc_ohc=s4aAfzYe26YAX_M6dr3&_nc_ht=scontent-cph2-1.xx&oh=00_AfBjgP5JEYq5VmxQ1HghrCPc9RLEcDRCKbKAizaLyunhoA&oe=64E88C6F" alt="Image 2"/>
+                <img src={ecutbildning} alt="Image 2"/>
                 <h3>Java developer - EC Utbildning</h3>
                 <p>The Java developer training has been added to provide business with people who have cutting-edge skills in the Java programming language. The goal of the education is that the students after the education should be able to work in a professional way with the development of Java and related areas. Knowledge and practical experience from leading frameworks and with modern tools and methods are included in the education.</p>
             </div>
