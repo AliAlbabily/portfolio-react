@@ -1,12 +1,13 @@
 import React from 'react';
 
 import ecutbildning from './assets/ecutbildning-javautvecklare.jpg';
+import malmouniversity from './assets/orkanen.jpg';
 
 function StudiesSection() {
     return ( 
         <section id="studies">
             <div className="card">
-                <img src="https://idrottsforum.org/wp-content/uploads/2020/02/orkanen.jpg" alt="Image 1"/>
+                <img src={malmouniversity} alt="Image 1"/>
                 <h3>Computer Systems Development - Malmö University</h3>
                 <p>The system development education focuses on teaching students the essential knowledge and skills to develop and implement software and IT solutions. It covers areas like programming languages, systems analysis, database management, web development, software architecture, and project management. Through practical training and project work, students gain insight into the entire development cycle and how to solve real IT industry problems.</p>
             </div>
