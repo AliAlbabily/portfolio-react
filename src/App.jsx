@@ -6,6 +6,7 @@ import StudiesSection from './Studies';
 import ProjectsSection from './Projects';
 import Header from './Header';
 import ScrollTop from './ScrollTopBtn';
+import Hexagons from './assets/hexagons.png';
 
 function App() {
 
@@ -32,8 +33,6 @@ function App() {
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   const insideStyles = {
-    // background: "#6eccb275", // lightgreen
-    // background: "#6f7d7975", // light
     background: "#589efc36", // lightblue
     padding: "100%",
     position: "absolute",
@@ -41,9 +40,9 @@ function App() {
     left: "50%",
     transform: "translate(-50%,-50%)",
     color: "white",
-    fontSize: "36px",
+    fontSize: "40px",
     textWrap: "nowrap",
-    fontFamily: "'Arial', sans-serif"
+    fontFamily: "fantasy, 'Arial', sans-serif"
   };
 
   return (
@@ -52,16 +51,16 @@ function App() {
 
       <AboutSection />
 
-      <Parallax bgImage={"https://media.timeout.com/images/105934803/image.jpg"} strength={500}>
-        <div style={{ height: 500 }}>
+      <Parallax bgImage={Hexagons} strength={-200}>
+        <div style={{ height: 150 }}>
           <div style={insideStyles}>Education</div>
         </div>
       </Parallax>
 
       <StudiesSection />
 
-      <Parallax bgImage={"https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2021/04/18-meter-Tall-Gundam-Statue-in-China-Featured-image.jpg"} strength={500}>
-        <div style={{ height: 500 }}>
+      <Parallax bgImage={Hexagons} strength={500}>
+        <div style={{ height: 150 }}>
           <div style={insideStyles}>Hobby Projects</div>
         </div>
       </Parallax>
@@ -71,7 +70,7 @@ function App() {
       <ScrollTop />
 
       <footer>
-        This page is designed and maintained by Ali Albabily
+        This page is designed and maintained by Ali Al.
       </footer>
     </div>
   )

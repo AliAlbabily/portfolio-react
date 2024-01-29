@@ -23,7 +23,7 @@ body {
 
 /* Header styles */
 header {
-  background: rgb(149 149 149 / 30%);
+  background: #589efc36;
   padding: 20px;
 }
 
@@ -211,7 +211,8 @@ nav img {
   max-width: 250px; /* Set a fixed maximum width for the images */
   height: auto; /* Ensure the images maintain their aspect ratio */
   max-height: 170px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
 }
 
 .card h3 {
@@ -220,14 +221,14 @@ nav img {
 }
 
 .card p {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-align: left;
 }
 
-#studies .card:first-child h3 {
-  font-size: 1.1rem;
+#studies .card h3 {
+  font-size: 100%;
 }
 
 #projects {
@@ -262,7 +263,7 @@ footer {
   background: rgb(149 149 149 / 30%);
   padding: 20px;
   text-align: center;
-  font-family: monospace;
+  font-family: "Arial", sans-serif;
 }
 
 /* Animations */
