@@ -59,7 +59,7 @@ function App() {
 
       <StudiesSection />
 
-      <Parallax bgImage={Hexagons} strength={500}>
+      <Parallax bgImage={Hexagons} strength={-200}>
         <div style={{ height: 150 }}>
           <div style={insideStyles}>Hobby Projects</div>
         </div>
