@@ -7,7 +7,7 @@ function AboutSection() {
     };
 
     const handleDownloadClick = () => {
-        const filePath = '/portfolio-react/CV-English.pdf';
+        const filePath = '/portfolio-react/CV-EN.pdf';
         
         // Perform basic file path validation
         if (isValidFilePath(filePath)) {
@@ -19,7 +19,7 @@ function AboutSection() {
 
     const isValidFilePath = (filePath) => {
         // Check if the filePath starts with '/portfolio-react/CV-English.pdf'
-        return filePath.startsWith('/portfolio-react/CV-English.pdf');
+        return filePath.startsWith('/portfolio-react/CV-EN.pdf');
     };
     
     return ( 
