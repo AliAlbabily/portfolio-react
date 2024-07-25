@@ -32,18 +32,18 @@ function App() {
     }
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
-  const insideStyles = {
-    background: "#589efc36", // lightblue
-    padding: "100%",
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%,-50%)",
-    color: "white",
-    fontSize: "40px",
-    textWrap: "nowrap",
-    fontFamily: "fantasy, 'Arial', sans-serif"
-  };
+  // const insideStyles = {
+  //   background: "#589efc36", // lightblue
+  //   padding: "100%",
+  //   position: "absolute",
+  //   top: "50%",
+  //   left: "50%",
+  //   transform: "translate(-50%,-50%)",
+  //   color: "white",
+  //   fontSize: "40px",
+  //   textWrap: "nowrap",
+  //   fontFamily: "fantasy, 'Arial', sans-serif"
+  // };
 
   return (
     <div className="App">
@@ -52,16 +52,16 @@ function App() {
       <AboutSection />
 
       <Parallax bgImage={Hexagons} strength={-200}>
-        <div style={{ height: 150 }}>
-          <div style={insideStyles}>Education</div>
+        <div style={{ height: 100 }}>
+          {/* <div style={insideStyles}>Education</div> */}
         </div>
       </Parallax>
 
       <StudiesSection />
 
       <Parallax bgImage={Hexagons} strength={-200}>
-        <div style={{ height: 150 }}>
-          <div style={insideStyles}>Hobby Projects</div>
+        <div style={{ height: 100 }}>
+          {/* <div style={insideStyles}>Hobby Projects</div> */}
         </div>
       </Parallax>
 
