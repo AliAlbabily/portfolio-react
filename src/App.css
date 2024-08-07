@@ -169,63 +169,93 @@ nav img {
   width: 100%;
 }
 
+.section-header {
+  color: white;
+  font-size: 40px;
+  font-family: 'fantasy', 'Arial', 'sans-serif';
+  margin-bottom: 20px;
+}
+
+/* Section */
 #studies {
   background: rgba(28, 19, 61, 0.116);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 50px;
 }
 
-.card {
-  width: 300px;
-  height: 550px;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 0 20px;
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: 0.3s ease;
+  padding: 20px;
+  border-radius: 8px;
+  width: 1000px;
+  max-width: 100%;
 }
 
-.card:hover {
-  background-color: #000000b0;
+.card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+  max-width: 400px;
 }
 
-.card img {
+.container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card-img {
   width: 100%;
-  max-width: 250px; /* Set a fixed maximum width for the images */
-  height: auto; /* Ensure the images maintain their aspect ratio */
-  max-height: 170px;
-  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
+  display: block;
+  border-radius: 20px 20px 0 0;
 }
 
-.card h3 {
-  margin-top: 10px;
-  font-size: 1.2rem;
+.container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.6;
 }
 
-.card p {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-align: left;
+.card1 > .container:after {
+  background-image: linear-gradient(135deg, #0100EC, #FB36F4);
 }
 
-#studies .card h3 {
-  font-size: 100%;
+.card2 > .container:after {
+  background-image: linear-gradient(135deg, #2BDCE3, #42FFDB);
 }
 
+.details {
+  padding: 20px 10px;
+}
+
+.details > h3 {
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+.details > p {
+  color: #A0A0A0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* Section */
 #projects {
   min-height: 100vh;
   max-height: fit-content;
@@ -317,10 +347,6 @@ footer {
     height: fit-content;
   }
 
-  #studies .card:first-child {
-    margin-bottom: 20px;
-  }
-
   #projectcards-container {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -343,5 +369,9 @@ footer {
 
   #studies p {
     font-size: 0.75rem;
+  }
+
+  .cards {
+    flex-direction: column;
   }
 }
