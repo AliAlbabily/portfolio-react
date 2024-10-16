@@ -6,7 +6,7 @@ import malmouniversity from './assets/orkanen.jpg';
 function StudiesSection() {
     return ( 
         <section id="studies">
-            <h1 className="section-header">Studies</h1>
+            <h1 className="section-header">My Previous <span className="header-span">Education</span></h1>
             <div className="cards">
                 <div className="card card1">
                     <div className="container">
