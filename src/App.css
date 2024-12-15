@@ -173,7 +173,6 @@ nav img {
   color: white;
   font-size: 40px;
   font-family: 'fantasy', 'Arial', 'sans-serif';
-  border-radius: 8px;
   border-bottom: 2px solid white;
   padding: 10px 0px;
   text-align: center;
@@ -265,7 +264,8 @@ nav img {
   border-bottom: 1px solid white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 #projectcards-container {
@@ -273,11 +273,10 @@ nav img {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 80%;
-  padding: 20px;
 }
 
 #projectcards-container > div {
-  background-color: #0000006b;
+  background-color: #1c1b29;
   margin: 10px;
 }
 
@@ -345,9 +344,9 @@ footer {
     height: fit-content;
   }
 
-  #projectcards-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  .section-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
