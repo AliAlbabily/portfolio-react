@@ -194,9 +194,11 @@ nav img {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  width: 1000px;
+  gap: 30px;
+  max-width: 1000px;
   max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card {
