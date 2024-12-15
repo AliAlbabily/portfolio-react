@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 function ProjectsSection() {
     return ( 
         <section id="projects">
+            <h1 className="section-header">My <span className="header-span">Projects</span></h1>
             <div id="projectcards-container">
                 <ProjectCard 
                     name="Chat App (Java)"
