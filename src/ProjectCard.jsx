@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActions, Collapse, Box } from '@mui/material';
 
-function ProjectCard({name, imageUrl, githubUrl, demoIsAvailable, demoUrl}) {
+function ProjectCard({name, imageUrl, githubUrl, demoIsAvailable, demoUrl, skills = []}) {
     const [skillsExpanded, setSkillsExpanded] = useState(false);
 
     const handleGithubButtonClick = () => {        
@@ -38,12 +38,24 @@ function ProjectCard({name, imageUrl, githubUrl, demoIsAvailable, demoUrl}) {
             </CardActions>
             <Collapse in={skillsExpanded} timeout="auto" unmountOnExit>
                 <Box sx={{ padding: 2 }}>
-                <Typography variant="body2" color="text.secondary">
-                    • JavaScript <br />
-                    • React <br />
-                    • Material UI <br />
-                    • Node.js <br />
-                </Typography>
+                    {skills.map((skill, index) => (
+                        <Box
+                            key={index}
+                            sx={{
+                                padding: '4px 8px',
+                                backgroundColor: '#f0f0f0',
+                                borderRadius: '4px',
+                                marginBottom: '8px',
+                                marginRight: '8px',
+                                display: 'inline-block',
+                                color: 'Black',
+                                fontSize: '14px',
+                                textShadow: 'none'
+                            }}
+                        >
+                            {skill}
+                        </Box>
+                    ))}
                 </Box>
             </Collapse>
         </Card>
