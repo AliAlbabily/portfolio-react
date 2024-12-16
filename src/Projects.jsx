@@ -11,6 +11,7 @@ function ProjectsSection() {
                     imageUrl="https://user-images.githubusercontent.com/32642133/130327760-c3a8ab02-302d-46bc-ae2d-8e8c217caf2d.png"
                     githubUrl="https://github.com/AliAlbabily/Chat-App"
                     demoIsAvailable={false}
+                    skills={['Java', 'object-oriented-programming', 'client-server']}
                 />
                 <ProjectCard 
                     name="My Characters Ranking" 
@@ -18,18 +19,21 @@ function ProjectsSection() {
                     githubUrl="https://github.com/AliAlbabily/My-Characters-Ranking"
                     demoIsAvailable={true}
                     demoUrl="https://alialbabily.github.io/My-Characters-Ranking/"
+                    skills={['Electron', 'json', 'HTML & CSS', 'JS']}
                 />
                 <ProjectCard 
                     name="Online Rock-Scissors-Paper" 
                     imageUrl="https://user-images.githubusercontent.com/32642133/185791673-2286e459-1f05-4150-8c9f-7c2b4a22b00b.png"
                     githubUrl="https://github.com/AliAlbabily/Online-Rock-Scissors-Paper"
                     demoIsAvailable={false}
+                    skills={['Node.js', 'React', 'Material UI']}
                 />
                 <ProjectCard 
                     name="My Movies List" 
                     imageUrl="https://user-images.githubusercontent.com/32642133/109197252-10c74e00-779d-11eb-85d1-c54054fd3c15.png"
                     githubUrl="https://github.com/AliAlbabily/My-Movies-List"
                     demoIsAvailable={false}
+                    skills={['API', 'React', 'Node.js', 'Express', 'MongoDB']}
                 />
                 <ProjectCard 
                     name="Player Damage Calculator" 
@@ -37,6 +41,7 @@ function ProjectsSection() {
                     githubUrl="https://github.com/AliAlbabily/Damage-Calculator-App"
                     demoIsAvailable={true}
                     demoUrl="https://alialbabily.github.io/Damage-Calculator-App/"
+                    skills={['React', 'Node.js', 'Material UI']}
                 />
                 <ProjectCard 
                     name="Sink The Ships (Java)" 
