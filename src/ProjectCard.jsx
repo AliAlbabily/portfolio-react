@@ -29,6 +29,7 @@ function ProjectCard({name, imageUrl, githubUrl, demoIsAvailable, demoUrl}) {
             <CardActions>
                 <Button size="small" variant="contained" onClick={handleGithubButtonClick}>Github</Button>
                 {demoIsAvailable ? <Button size="small" variant="contained" onClick={handleDemoButtonClick}>Demo</Button> : null}
+                <Button size="small" variant="outlined">Skills</Button>
             </CardActions>
         </Card>
     );
