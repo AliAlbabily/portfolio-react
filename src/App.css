@@ -304,8 +304,7 @@ nav img {
 /* ****************************** */
 
 #skills {
-  height: 100vh;
-  /* max-height: fit-content; */
+  min-height: 100vh;
   background: rgba(28, 19, 61, 0.116);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -313,13 +312,99 @@ nav img {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-
   width: 100%;
   padding: 30px 10%;
 }
 
+#skills .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top:  70px;
+}
 
-/* Footer styles */
+.row .col {
+  flex-basis: 46%;
+}
+
+.row .sub-title h2 {
+  position: relative;
+  color: #589efc;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.row .sub-title h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  top: 125%;
+  left: 0;
+  background-color: #808080;
+}
+
+.row .sub-title h2::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  top: calc(125% - 1px);
+  left: 0;
+  background-color: white;
+}
+
+.subject {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #808080;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.progress-bar::after {
+  position: absolute;
+  content: attr(value);
+  top: -35px;
+  right: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.progress-line {
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background-color: #589efc;
+  border-radius: 15px;
+  top: -1px;
+}
+
+.progress-line::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #589efc;
+}
+
+/* ****************************** */
+/* Footer */
+/* ****************************** */
 footer {
   background: #589efc36;
   padding: 20px;
@@ -327,7 +412,9 @@ footer {
   font-family: math, 'Arial', 'sans-serif';
 }
 
+/* ****************************** */
 /* Animations */
+/* ****************************** */
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -401,5 +488,18 @@ footer {
 
   .cards {
     flex-direction: column;
+  }
+
+  #skills {
+    max-height: fit-content;
+    padding: 30px 8%;
+  }
+
+  #skills .row {
+    flex-direction: column;
+  }
+
+  #skills .row .col:first-of-type {
+    margin-bottom: 30px;
   }
 }
