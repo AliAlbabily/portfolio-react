@@ -7,6 +7,7 @@ import ProjectsSection from './Projects';
 import Header from './Header';
 import ScrollTop from './ScrollTopBtn';
 import Hexagons from './assets/hexagons.png';
+import Skills from './Skills';
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
     const handleClick = (e) => {
       e.preventDefault();
       document.querySelector(e.target.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
+        block: 'start' // Ensure the section is aligned to the top
       })
     }
 
@@ -58,6 +60,14 @@ function App() {
       </Parallax>
 
       <StudiesSection />
+
+      <Parallax bgImage={Hexagons} strength={-200}>
+        <div style={{ height: 100 }}>
+          {/* <div style={insideStyles}>Hobby Projects</div> */}
+        </div>
+      </Parallax>
+
+      <Skills />
 
       <Parallax bgImage={Hexagons} strength={-200}>
         <div style={{ height: 100 }}>

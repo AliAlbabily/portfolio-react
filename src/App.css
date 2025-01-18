@@ -77,7 +77,10 @@ nav img {
   }
 }
 
-/* Section styles */
+/* ****************************** */
+/* About Me - Section */
+/* ****************************** */
+
 #about {
   height: 100vh;
   background: rgba(28, 19, 61, 0.116);
@@ -179,7 +182,10 @@ nav img {
   font-family: "Manrope", 'Arial', 'sans-serif';
 }
 
-/* Section */
+/* ****************************** */
+/* Studies - Section */
+/* ****************************** */
+
 #studies {
   background: rgba(28, 19, 61, 0.116);
   border-top: 1px solid white;
@@ -258,7 +264,10 @@ nav img {
   color: #589efc;
 }
 
-/* Section */
+/* ****************************** */
+/* Projects - Section */
+/* ****************************** */
+
 #projects {
   min-height: 100vh;
   max-height: fit-content;
@@ -289,6 +298,26 @@ nav img {
   text-align: center;
   color: white;
 }
+
+/* ****************************** */
+/* Skills - Section */
+/* ****************************** */
+
+#skills {
+  height: 100vh;
+  /* max-height: fit-content; */
+  background: rgba(28, 19, 61, 0.116);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 30px 10%;
+}
+
 
 /* Footer styles */
 footer {
