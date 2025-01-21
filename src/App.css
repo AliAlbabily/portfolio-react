@@ -95,6 +95,21 @@ nav img {
   animation: slideRight 2s ease forwards;
 }
 
+/* TODO: */
+#about::before {
+  content: '';
+  background-image: url(./assets/Bild3.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto; /* 80% width and automatic height to maintain aspect ratio */
+  background-position: calc(100% - -150px) center; /* Keep it aligned to the right */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.65;
+}
+
 .about-content {
   max-width: 600px;
 }
