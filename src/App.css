@@ -95,6 +95,21 @@ nav img {
   animation: slideRight 2s ease forwards;
 }
 
+/* TODO: */
+#about::before {
+  content: '';
+  background-image: url(./assets/Bild3.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto; /* 60% width and automatic height to maintain aspect ratio */
+  background-position: calc(100% - -150px) bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.65;
+}
+
 .about-content {
   max-width: 600px;
 }
@@ -167,6 +182,7 @@ nav img {
 
 .home-image {
   max-width: 570px;
+  display: none;
   opacity: 0.8;
 }
 
@@ -450,6 +466,7 @@ footer {
     max-width: 400px;
     margin-right: unset;
     margin-bottom: 10px;
+    display: block;
   }
 
   .about-content {
@@ -466,6 +483,10 @@ footer {
   .section-header {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #about::before {
+    background-image: none; /* Remove the background image */
   }
 }
 
