@@ -54,7 +54,7 @@ function AboutSection() {
             </div>
 
             <div className="home-image">
-                {/* <img src={HomeImage} alt="Logo" /> */}
+                <img src={HomeImage} alt="Logo" />
             </div>
         </section>
     );

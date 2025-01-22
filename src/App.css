@@ -100,8 +100,8 @@ nav img {
   content: '';
   background-image: url(./assets/Bild3.png);
   background-repeat: no-repeat;
-  background-size: 60% auto; /* 80% width and automatic height to maintain aspect ratio */
-  background-position: calc(100% - -150px) center; /* Keep it aligned to the right */
+  background-size: 60% auto; /* 60% width and automatic height to maintain aspect ratio */
+  background-position: calc(100% - -150px) bottom;
   position: absolute;
   top: 0;
   left: 0;
@@ -182,6 +182,7 @@ nav img {
 
 .home-image {
   max-width: 570px;
+  display: none;
 }
 
 .home-image img {
@@ -464,6 +465,7 @@ footer {
     max-width: 400px;
     margin-right: unset;
     margin-bottom: 10px;
+    display: block;
   }
 
   .about-content {
@@ -480,6 +482,10 @@ footer {
   .section-header {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #about::before {
+    background-image: none; /* Remove the background image */
   }
 }
 
