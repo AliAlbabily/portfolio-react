@@ -1,5 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import PyhtonProjectImage from './assets/slot-machine-new.jpg';
+import DatesManagerProjectImage from './assets/dates manager.png';
+
 
 function ProjectsSection() {
     return ( 
@@ -22,18 +25,26 @@ function ProjectsSection() {
                     skills={['Electron', 'json', 'HTML & CSS', 'JS']}
                 />
                 <ProjectCard 
-                    name="Online Rock-Scissors-Paper" 
-                    imageUrl="https://user-images.githubusercontent.com/32642133/185791673-2286e459-1f05-4150-8c9f-7c2b4a22b00b.png"
-                    githubUrl="https://github.com/AliAlbabily/Online-Rock-Scissors-Paper"
-                    demoIsAvailable={false}
-                    skills={['Node.js', 'React', 'Material UI']}
-                />
-                <ProjectCard 
-                    name="My Movies List" 
+                    name="My Movies List (React)" 
                     imageUrl="https://user-images.githubusercontent.com/32642133/109197252-10c74e00-779d-11eb-85d1-c54054fd3c15.png"
                     githubUrl="https://github.com/AliAlbabily/My-Movies-List"
                     demoIsAvailable={false}
-                    skills={['API', 'React', 'Node.js', 'Express', 'MongoDB']}
+                    skills={['API', 'Server', 'React', 'Node.js', 'Express', 'MongoDB']}
+                />
+                <ProjectCard 
+                    name="Slot Machine (Python)" 
+                    imageUrl={PyhtonProjectImage} // Use the imported image
+                    githubUrl="https://github.com/AliAlbabily/Python-Slot-Machine-Game"
+                    demoIsAvailable={false}
+                    skills={['Python', 'Unittest']}
+                />
+                <ProjectCard 
+                    name="Products Dates Manager" 
+                    imageUrl={DatesManagerProjectImage} // Use the imported image
+                    githubUrl="https://github.com/AliAlbabily/Products-Dates-Manager-Vite"
+                    demoIsAvailable={true}
+                    demoUrl="https://alialbabily.github.io/Products-Dates-Manager-Vite/"
+                    skills={['React', 'LocalStorage', 'Vite']}
                 />
                 <ProjectCard 
                     name="Player Damage Calculator" 
@@ -42,12 +53,6 @@ function ProjectsSection() {
                     demoIsAvailable={true}
                     demoUrl="https://alialbabily.github.io/Damage-Calculator-App/"
                     skills={['React', 'Node.js', 'Material UI']}
-                />
-                <ProjectCard 
-                    name="Sink The Ships (Java)" 
-                    imageUrl="https://user-images.githubusercontent.com/32642133/103290771-966f8d00-49ea-11eb-9977-455928444b1d.png"
-                    githubUrl="https://github.com/AliAlbabily/Sink-the-ships"
-                    demoIsAvailable={false}
                 />
             </div>
         </section>
